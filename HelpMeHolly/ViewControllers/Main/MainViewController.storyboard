@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s2D-VR-2XR">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0LE-Mm-zDk" customClass="MainViewController" customModule="HelpMeHolly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Soc-D6-HIM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-nd-OUD">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="691"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iq-4q-zAc">
+                                <rect key="frame" x="59" y="533" width="257" height="38"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.80392156862745101" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="lx5-1z-h16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInBtnTapped:" destination="0LE-Mm-zDk" eventType="touchUpInside" id="bXf-fd-mFZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05b-VF-8E1">
+                                <rect key="frame" x="59" y="589" width="257" height="38"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.80392156862745101" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="b7u-o7-SIA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpBtnTapped:" destination="0LE-Mm-zDk" eventType="touchUpInside" id="tDv-Oh-Fba"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fUn-an-HMq" firstAttribute="bottom" secondItem="05b-VF-8E1" secondAttribute="bottom" constant="40" id="9Nb-tm-6vT"/>
+                            <constraint firstItem="Dqe-nd-OUD" firstAttribute="leading" secondItem="fUn-an-HMq" secondAttribute="leading" id="Fev-7H-5m9"/>
+                            <constraint firstItem="6Iq-4q-zAc" firstAttribute="leading" secondItem="fUn-an-HMq" secondAttribute="leading" constant="59" id="QGK-W6-12O"/>
+                            <constraint firstItem="fUn-an-HMq" firstAttribute="trailing" secondItem="6Iq-4q-zAc" secondAttribute="trailing" constant="59" id="Rzk-NY-OWO"/>
+                            <constraint firstItem="fUn-an-HMq" firstAttribute="trailing" secondItem="05b-VF-8E1" secondAttribute="trailing" constant="59" id="dGP-ND-QUM"/>
+                            <constraint firstItem="fUn-an-HMq" firstAttribute="trailing" secondItem="Dqe-nd-OUD" secondAttribute="trailing" id="h0l-Q1-JAT"/>
+                            <constraint firstItem="Dqe-nd-OUD" firstAttribute="top" secondItem="fUn-an-HMq" secondAttribute="top" constant="-44" id="iWB-gN-kdW"/>
+                            <constraint firstItem="05b-VF-8E1" firstAttribute="leading" secondItem="fUn-an-HMq" secondAttribute="leading" constant="59" id="tO6-NJ-fZE"/>
+                            <constraint firstItem="fUn-an-HMq" firstAttribute="bottom" secondItem="Dqe-nd-OUD" secondAttribute="bottom" id="wlU-C0-z33"/>
+                            <constraint firstItem="05b-VF-8E1" firstAttribute="top" secondItem="6Iq-4q-zAc" secondAttribute="bottom" constant="18" id="yFl-T3-icd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fUn-an-HMq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7y-ea-a8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="375" height="667"/>
+    </resources>
+</document>
